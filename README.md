@@ -46,7 +46,7 @@ if you wan to use Sequel Pro instead of PHPmyAdmin use these settings.
 
 * MySQL Host: 127.0.0.1
 * Username: root
-* Password:
+* Password: (blank)
 * SSH Host: 127.0.0.1
 * SSH User: vagrant
 * SSH Key: ~/.vagrant.d/insecure_private_key (Click the key and it'll ask you to locate the key)
