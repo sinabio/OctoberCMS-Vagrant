@@ -19,4 +19,4 @@ mv -v /vagrant/www/install-master/* /vagrant/www/
 #Delete the empty folder
 rm -rf /vagrant/www/install-master
 
-echo Good to go now! Just to localhost://8888/install.php in the browser
+echo Good to go now! Just to http://localhost:8888/install.php in the browser
