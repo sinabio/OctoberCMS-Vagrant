@@ -2,7 +2,7 @@
 
 A basic Ubuntu 12.04 Vagrant setup with October CMS. The box has been adapted from [bryannielsen](https://github.com/bryannielsen/Laravel4-Vagrant) Laravel 4 w/ Vagrant repository. There is probably has some necessary stuff installed on the vagrant server regarding PHP libraries/extensions at the moment but will get round to fixing this soon and stripping it down to the minimum which October CMS requires.
 
-For more information on [October CMS](http://octobercms.com/)
+For more information on: [October CMS](http://octobercms.com/)
 
 ## Requirements
 
@@ -55,7 +55,7 @@ if you wan to use Sequel Pro instead of PHPmyAdmin use these settings.
 
 ### Vagrant
 
-Vagrant is [very well documented](http://vagrantup.com/v1/docs/index.html) but here are a few common commands:
+Vagrant is [very well documented](https://docs.vagrantup.com/v2/) but here are a few common commands:
 
 * `vagrant up` starts the virtual machine and provisions it
 * `vagrant suspend` will essentially put the machine to 'sleep' with `vagrant resume` waking it back up
