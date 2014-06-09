@@ -19,4 +19,9 @@ mv -v /vagrant/www/install-master/* /vagrant/www/
 #Delete the empty folder
 rm -rf /vagrant/www/install-master
 
+#Get MailCatcher and start it.
+apt-get -y install libsqlite3-dev
+gem install mailcatcher
+mailcatcher --ip=0.0.0.0
+
 echo Good to go now! Just to http://localhost:8888/install.php in the browser

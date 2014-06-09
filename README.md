@@ -52,6 +52,33 @@ if you wan to use Sequel Pro instead of PHPmyAdmin use these settings.
 * SSH Key: ~/.vagrant.d/insecure_private_key (Click the key and it'll ask you to locate the key)
 * SSH Port: 2222
 
+### MailCatcher & October CMS
+MailCatcher(http://mailcatcher.me/) has been configured as this tool is quite handy when testing email functionality and contact forms plug-ins within a local environment. To access MailCatcher enter http://0.0.0.0:1080/ in the browser (this has been enabled during the setup).
+
+Details:
+
+* smtp://0.0.0.0:1025
+* http://0.0.0.0:1080
+
+To configure MailCatcher within October CMS you will need to update the app/config/mail.php file with the smtp details. Note encryption has been set to null, you would probably want to restore this to the original value on production servers. 
+
+`'driver' => 'smtp',`
+`'host' => '0.0.0.0:1025',`
+`'port' => 1025,`
+`'encryption' => '',`
+
+Mail catcher runs as a deamon so will run in the background, it can be disabled within the dashboard at http://0.0.0.0:1080/ or you can `vagrant ssh` into the box and run the following command:
+
+`ps ax | grep mailcatcher` 
+
+This will output something along these lines:
+
+22183 ?        S      0:01 /opt/vagrant_ruby/bin/ruby /opt/vagrant_ruby/bin/mailcatcher --ip=0.0.0.0
+22216 pts/0    S+     0:00 grep --color=auto mailcatcher
+
+In the above example to kill MailCactehr enter:
+
+`kill 22183`
 
 ### Vagrant
 
@@ -61,6 +88,7 @@ Vagrant is [very well documented](https://docs.vagrantup.com/v2/) but here are a
 * `vagrant suspend` will essentially put the machine to 'sleep' with `vagrant resume` waking it back up
 * `vagrant halt` attempts a graceful shutdown of the machine and will need to be brought back with `vagrant up`
 * `vagrant ssh` gives you shell access to the virtual machine
+
 
 ----
 ##### Virtual Machine Specifications #####

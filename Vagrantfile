@@ -13,6 +13,8 @@ Vagrant.configure("2") do |config|
         octoberCms_config.vm.network :forwarded_port, guest: 80, host: 8888, auto_correct: true
         octoberCms_config.vm.network :forwarded_port, guest: 3306, host: 8889, auto_correct: true
         octoberCms_config.vm.network :forwarded_port, guest: 5432, host: 5433, auto_correct: true
+        octoberCms_config.vm.network :forwarded_port, guest: 1080, host: 1080, auto_correct: true
+        octoberCms_config.vm.network :forwarded_port, guest: 1025, host: 1025, auto_correct: true
         octoberCms_config.vm.hostname = "OctoberCMS"
         octoberCms_config.vm.synced_folder "www", "/var/www", {:mount_options => ['dmode=777','fmode=777']}
         octoberCms_config.vm.provision :shell, :inline => "echo \"Europe/London\" | sudo tee /etc/timezone && dpkg-reconfigure --frontend noninteractive tzdata"
