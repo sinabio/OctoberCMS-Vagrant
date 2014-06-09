@@ -53,7 +53,9 @@ if you wan to use Sequel Pro instead of PHPmyAdmin use these settings.
 * SSH Port: 2222
 
 ### MailCatcher & October CMS
-MailCatcher(http://mailcatcher.me/) has been configured as this tool is quite handy when testing email functionality and contact forms plug-ins within a local environment. To access MailCatcher enter http://0.0.0.0:1080/ in the browser (this has been enabled during the setup).
+[MailCatcher] (http://mailcatcher.me/) has been configured as is quite handy when testing email functionality and contact forms within a local environment. 
+
+To access MailCatcher enter http://0.0.0.0:1080/ in the browser (this has been enabled during the setup).
 
 Details:
 
@@ -63,8 +65,11 @@ Details:
 To configure MailCatcher within October CMS you will need to update the app/config/mail.php file with the smtp details. Note encryption has been set to null, you would probably want to restore this to the original value on production servers. 
 
 `'driver' => 'smtp',`
+
 `'host' => '0.0.0.0:1025',`
+
 `'port' => 1025,`
+
 `'encryption' => '',`
 
 Mail catcher runs as a deamon so will run in the background, it can be disabled within the dashboard at http://0.0.0.0:1080/ or you can `vagrant ssh` into the box and run the following command:
