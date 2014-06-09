@@ -1,6 +1,6 @@
 # October CMS-Vagrant
 
-A basic Ubuntu 12.04 Vagrant setup with October CMS. The box has been adapted from [bryannielsen](https://github.com/bryannielsen/Laravel4-Vagrant) Laravel 4 w/ Vagrant repository. There is probably has some necessary stuff installed on the vagrant server regarding PHP libraries/extensions at the moment but will get round to fixing this soon and stripping it down to the minimum which October CMS requires.
+A basic Ubuntu 12.04 Vagrant setup with October CMS.
 
 For more information on: [October CMS](http://octobercms.com/)
 
