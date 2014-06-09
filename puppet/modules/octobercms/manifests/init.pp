@@ -11,15 +11,6 @@ class octobercms
 		require => Package['apache2']
 	}
 
-	exec { 'setup octobercms':
-		command => "/bin/sh -c 'wget  https://github.com/octobercms/install/archive/master.zip && mv master.zip /var/www'",
-		creates => [ "/var/www"],
-		timeout => 900,
-		logoutput => true
-
-		}
-
-
 	file { '/var/www':
 		mode => 0777
 	}

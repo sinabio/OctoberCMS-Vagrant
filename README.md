@@ -52,24 +52,6 @@ if you wan to use Sequel Pro instead of PHPmyAdmin use these settings.
 * SSH Key: ~/.vagrant.d/insecure_private_key (Click the key and it'll ask you to locate the key)
 * SSH Port: 2222
 
-### PHP XDebug
-
-XDebug is included in the build but **disabled by default** because of the effect it can have on performance.  
-
-To enable XDebug:
-
-1. Set the variable `$use_xdebug = "1"` at the beginning of `puppet/manifests/phpbase.pp`
-2. Then you will need to provision the box either with `vagrant up` or by running the command `vagrant provision` if the box is already up
-3. Now you can connect to XDebug on **port 9001**
-
-**XDebug Tools**
-
-* [MacGDBP](http://www.bluestatic.org/software/macgdbp/) - Free, Mac OSX
-* [Codebug](http://www.codebugapp.com/) - Paid, Mac OSX
-
-
-_Note: All XDebug settings can be configured in the php.ini template at `puppet/modules/php/templates/php.ini.erb`_
-
 
 ### Vagrant
 
