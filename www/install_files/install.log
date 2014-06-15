@@ -1,0 +1,177 @@
+.====================================================================.
+                                                                      
+ .d8888b.   .o8888b.   db  .d8888b.  d8888b. d88888b d8888b.  .d888b. 
+.8P    Y8. d8P    Y8   88 .8P    Y8. 88  `8D 88'     88  `8D .8P , Y8.
+88      88 8P      oooo88 88      88 88oooY' 88oooo  88oobY' 88  |  88
+88      88 8b      ~~~~88 88      88 88~~~b. 88~~~~  88`8b   88  |/ 88
+`8b    d8' Y8b    d8   88 `8b    d8' 88   8D 88.     88 `88. `8b | d8'
+ `Y8888P'   `Y8888P'   YP  `Y8888P'  Y8888P' Y88888P 88   YD  `Y888P' 
+                                                                      
+`========================== INSTALLATION LOG ========================'
+
+[2014/06/15 07:58:55] Host: Linux OctoberCMS 3.2.0-23-generic-pae #36-Ubuntu SMP Tue Apr 10 22:19:09 UTC 2012 i686
+[2014/06/15 07:58:55] PHP version: 5.5.12-2+deb.sury.org~precise+1
+[2014/06/15 07:58:55] Server software: Apache/2.4.9 (Ubuntu)
+[2014/06/15 07:58:55] Operating system: Linux
+[2014/06/15 07:58:55] Memory limit: 128M
+[2014/06/15 07:58:55] Max execution time: 3600
+.============================ POST REQUEST ==========================.
+[2014/06/15 07:58:56] Postback payload: Array
+(
+    [code] => phpVersion
+    [handler] => onCheckRequirement
+)
+
+[2014/06/15 07:58:56] System check: phpVersion
+[2014/06/15 07:58:56] Requirement phpVersion +OK
+[2014/06/15 07:58:56] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2014/06/15 07:58:56] Postback payload: Array
+(
+    [code] => safeMode
+    [handler] => onCheckRequirement
+)
+
+[2014/06/15 07:58:56] System check: safeMode
+[2014/06/15 07:58:56] Requirement safeMode +OK
+[2014/06/15 07:58:56] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2014/06/15 07:58:57] Postback payload: Array
+(
+    [code] => curlLibrary
+    [handler] => onCheckRequirement
+)
+
+[2014/06/15 07:58:57] System check: curlLibrary
+[2014/06/15 07:58:57] Requirement curlLibrary +OK
+[2014/06/15 07:58:57] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2014/06/15 07:58:57] Postback payload: Array
+(
+    [code] => liveConnection
+    [handler] => onCheckRequirement
+)
+
+[2014/06/15 07:58:57] System check: liveConnection
+[2014/06/15 07:58:58] Server request: ping
+[2014/06/15 07:58:58] Request information: Array
+(
+    [url] => http://octobercms.com/api/ping
+    [content_type] => application/json
+    [http_code] => 200
+    [header_size] => 852
+    [request_size] => 171
+    [filetime] => -1
+    [ssl_verify_result] => 0
+    [redirect_count] => 0
+    [total_time] => 0.385729
+    [namelookup_time] => 0.001469
+    [connect_time] => 0.183566
+    [pretransfer_time] => 0.183584
+    [size_upload] => 40
+    [size_download] => 10
+    [speed_download] => 25
+    [speed_upload] => 103
+    [download_content_length] => -1
+    [upload_content_length] => 40
+    [starttransfer_time] => 0.384613
+    [redirect_time] => 0
+    [redirect_url] => 
+    [primary_ip] => 50.116.3.170
+    [certinfo] => Array
+        (
+        )
+
+    [primary_port] => 80
+    [local_ip] => 10.0.2.15
+    [local_port] => 54541
+)
+
+[2014/06/15 07:58:58] Requirement liveConnection +OK
+[2014/06/15 07:58:58] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2014/06/15 07:58:58] Postback payload: Array
+(
+    [code] => writePermission
+    [handler] => onCheckRequirement
+)
+
+[2014/06/15 07:58:58] System check: writePermission
+[2014/06/15 07:58:58] Requirement writePermission +OK
+[2014/06/15 07:58:58] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2014/06/15 07:58:59] Postback payload: Array
+(
+    [code] => pdoLibrary
+    [handler] => onCheckRequirement
+)
+
+[2014/06/15 07:58:59] System check: pdoLibrary
+[2014/06/15 07:58:59] Requirement pdoLibrary +OK
+[2014/06/15 07:58:59] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2014/06/15 07:58:59] Postback payload: Array
+(
+    [code] => mcryptLibrary
+    [handler] => onCheckRequirement
+)
+
+[2014/06/15 07:58:59] System check: mcryptLibrary
+[2014/06/15 07:58:59] Requirement mcryptLibrary +OK
+[2014/06/15 07:58:59] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2014/06/15 07:59:00] Postback payload: Array
+(
+    [code] => zipLibrary
+    [handler] => onCheckRequirement
+)
+
+[2014/06/15 07:59:00] System check: zipLibrary
+[2014/06/15 07:59:00] Requirement zipLibrary +OK
+[2014/06/15 07:59:00] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
+.============================ POST REQUEST ==========================.
+[2014/06/15 07:59:00] Postback payload: Array
+(
+    [code] => gdLibrary
+    [handler] => onCheckRequirement
+)
+
+[2014/06/15 07:59:00] System check: gdLibrary
+[2014/06/15 07:59:00] Requirement gdLibrary +OK
+[2014/06/15 07:59:00] Execute handler (onCheckRequirement): Array
+(
+    [result] => 1
+)
+
