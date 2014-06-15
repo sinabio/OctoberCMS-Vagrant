@@ -21,7 +21,7 @@ rm -rf /vagrant/www/install-master
 
 #Get MailCatcher and start it.
 apt-get -y install libsqlite3-dev &&
-echo Be patient 'gem install' somtimes runs slow... 
+echo Be patient gem install somteimes runs a bit slow ... 
 gem install mailcatcher
 mailcatcher --ip=0.0.0.0
 
