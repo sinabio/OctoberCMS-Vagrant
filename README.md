@@ -103,6 +103,3 @@ Vagrant is [very well documented](https://docs.vagrantup.com/v2/) but here are a
 * PHP    - 5.5.4
 * MySQL  - 5.5.32
 * PostgreSQL - 9.1
-* Beanstalkd - 1.4.6
-* Redis - 2.2.12
-* Memcached - 1.4.13
